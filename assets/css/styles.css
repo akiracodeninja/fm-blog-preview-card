@@ -73,7 +73,6 @@ body {
   align-items: center;
   gap: 12px;
 }
-
 .author .avatar {
   width: 32px;
   height: 32px;
@@ -85,4 +84,27 @@ body {
   font-size: 14px;
   font-weight: 800;
   color: var(--gray-950);
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 325px;
+    height: 505px;
+  }
+ 
+  .blog-image {
+    background-position: 50% 0%;
+  }
+
+  .content .category, 
+  .content .publish-date {
+    font-size: 12px;
+  }
+  .content .title {
+    font-size: 20px;
+  }
+  .content .description {
+    font-size: 14px;
+    margin-top: 15px;
+  }
 }
